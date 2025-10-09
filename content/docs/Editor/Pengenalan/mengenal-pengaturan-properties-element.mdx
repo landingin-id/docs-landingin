@@ -1,0 +1,203 @@
+---
+title: Pengenalan Properties
+description: Penjelasan pengaturan properties tersedia di tiap komponent.
+---
+
+<img src="/uploads/banner-panel-properties.png" alt="Alt text" width="100%" />
+
+### Penjelasan
+
+Setiap komponen seperti, text, button, paragraf dll memiliki propertiesnya masing masing. yang dimana properties di tiap komponen
+dapat diubah atau disesuaikan sesuai kebutuhan. Pengaturan properties akan muncul di bagian panel sebelah kanan  -> lalu klik pada tab style. pada tab style komponen
+properties apa saja yang akan muncul tergantung element komponen yang sedang di klik. Berikut contoh panel properties yang bisa anda lihat :
+
+<img src="/uploads/panel-properties.png" alt="Alt text" width="100%" />
+
+## Segment Properties
+
+Panel Properties terbagi menjadi 8 Kelompok yang diantaranya :
+
+## A. Display
+Pada segment ini, berfungsi sebagai pengaturan properties terkait tata letak dan posisi di tiap element. pada segment ini terdiri dari beberapa pengaturan properti seperti 
+
+### 1. Properti Display
+Properti display adalah salah satu properti pengaturan tampilan paling fundamental yang menentukan bagaimana 
+sebuah elemen ditampilkan dan bagaimana elemen tersebut berinteraksi dengan elemen lain di sekitarnya dalam tata letak dokumen. contoh pilihan display yang 
+tersedia :
+
+**a. Block** : Element akan tampil penuh satu baris.
+    <img src="/uploads/element-block-1.jpg" alt="Alt text" width="50%" />
+    Apabila element di set size ukuran dalam bentuk pixel atau persentase contoh, terdapat 2 buah element entah itu sebuah text atau button dan masing masing
+    diset ukuran lebar dan tingginya seperti gambar dibawah ini :
+    <img src="/uploads/element-block-2.jpg" alt="Alt text" width="50%" />
+**b. Inline** : Element tampil dengan sejajar dalam satu baris dan tidak memulai baris baru. contoh penerapanya :
+    Contoh terdapat 3 buah element berupa text paragraf dan masing2 element untuk lebarnya dibiarkan secara default, maka akan tampil seperti gambar dibawah ini :
+    <img src="/uploads/element-inline-1.jpg" alt="Alt text" width="50%" />
+**c. Inline Block** : Adalah nilai properti display yang menggabungkan karakteristik dari inline dan block. 
+    
+    Element dengan properti ini akan berprilaku seperti element inline yang tidak membuat garis baru tapi dapat juga diset tinggi dan lebarnya seperti element block.
+    <img src="/uploads/element-inline-block-1.jpg" alt="Alt text" width="50%" />
+    Contoh terdapat 3 buah element berupa text paragraf dan masing masing element untuk lebarnya dibiarkan secara default, maka akan tampil seperti gambar diatas :
+
+### 2. Position
+Properti position digunakan untuk mengatur posisi elemen secara detail, bersama dengan properti lain seperti top, right, bottom, dan left. Dan adapun
+macam2 jenis properti position yang tersedia :
+
+1. **Static** : Nilai default untuk elemen; elemen diposisikan sesuai alur normal dokumen. Properti top, right, bottom, dan left tidak berpengaruh.
+2. **Relative** : Posisi elemen diatur relatif terhadap posisi normalnya. Ini memungkinkan pergeseran dari posisi asli tanpa memengaruhi posisi elemen lain.
+3. **Absolute** : Elemen dikeluarkan dari alur dokumen dan diposisikan relatif terhadap elemen relative terdekat dalam hierarki (parent).
+4. **Fixed** : Mirip dengan absolute, tetapi elemen diposisikan relatif terhadap viewport (jendela browser). Elemen akan tetap menempel di layar saat halaman di-scroll.
+
+### 3. Top, Left, Right, Bottom
+Properti ini digunakan untuk mengatur posisi element secara manual. untuk lebih memahaminya, lihat contoh penerapan dibawah ini :
+
+Terdapat 2 buah element yang terdiri dari element heading dan text paragraf, dan masing masing element memiliki pengaturan posisinya masing masing.
+<img src="/uploads/element-position-1.jpg" alt="Alt text" width="50%" />
+
+### 4. Float
+Float adalah properti yang digunakan untuk mengatur posisi sebuah elemen secara horizontal, membuat elemen tersebut sejajar ke sebelah kiri atau kanan didalam kontainer yang membungkusnya.
+Dan berikut properti float yang tersedia :
+
+
+**a. Left** : Element akan sejajar secara horizontal dari kiri ke kanan dalam satu baris. berikut contoh penerapanya :
+    <img src="/uploads/element-left.jpg" alt="Alt text" width="50%" />
+
+**b. Right** : Element akan sejajar secara horizontal dari kanan ke kiri dalam satu baris. berikut contoh penerapanya :
+    <img src="/uploads/element-right.jpg" alt="Alt text" width="50%" />
+
+**c. None** : Element tidak akan sejajar secara horizontal. berikut contoh penerapanya :
+    <img src="/uploads/element-none.jpg" alt="Alt text" width="50%" />
+
+### 5. Opacity
+Pada properti ini berfungsi untuk mengatur tingkat transparasi suatu element. nilai default yang diberikan
+ketika element baru ditambahkan adalah 1, nilai semakin kecil dari 1 maka tingkat transparasinya berkurang.
+
+### 6. Background Color
+Properti ini berfungsi untuk mengatur warna background pada suatu element, terdapat opsi color palete
+dan eye droped, untuk menentukan dan mengambil sampel warna yang diperlukan. sebagai contoh :
+
+Pilih element yang ingin di ubah warnanya 
+
+<img src="/uploads/bg-color-3.png" alt="Alt text" width="50%" />
+
+Dari tab style di panel properties, klik icon kotak berwarna, maka akan muncul color palet yang bisa
+anda pilih mau rubah ke warna apa.
+
+<img src="/uploads/bg-color.png" alt="Alt text" width="50%" />
+
+Atau ada opsi "Other" apabila warna yang disediakan di color palete tidak ada yang sesuai.
+
+<img src="/uploads/bg-color-2.png" alt="Alt text" width="50%" />
+
+dan berikut hasil yang di dapat setelah melakukan perubahan :
+
+<img src="/uploads/bg-color-4.png" alt="Alt text" width="50%" />
+
+Contoh mengubah background pada component hero :
+
+<img src="/uploads/bg-color-4.jpg" alt="Alt text" width="70%" />
+
+### 7. Text Color
+Properti text color hampir mirip dengan background color, namun ini berfungsi untuk menentukan warna pada suatu text.
+
+<img src="/uploads/bg-color-5.png" alt="Alt text" width="50%" />
+
+## B. Typography
+Pada segment ini adalah properti pengaturan terkait element font pada landing page, seperti element paragraph, heading dan element apapun
+yang memiliki font didalamnya.
+
+### 1. Font Size
+Menentukan ukuran font pada suatu element, contoh penerapannya :
+
+Klik header text yang bertuliskan "Digital Marketing Blackbox"
+
+<img src="/uploads/font-size-1.png" alt="Alt text" width="70%" />
+
+Lalu pada panel properties di tab style, ubah nilai pada font size sesuai ukuran yang kamu inginkan, maka hasilnya seperti ini :
+
+<img src="/uploads/font-size-2.png" alt="Alt text" width="70%" />
+
+### 2. Font Weight
+Menentukan ukuran font pada suatu element, contoh penerapannya,
+Default font weight yang terset pada element heading ini ialah "Semi-Bold"
+
+<img src="/uploads/font-size-1.png" alt="Alt text" width="70%" />
+
+Maka saya akan mengubahnya menjadi "Extra-Light", maka hasilnya seperti ini :
+
+<img src="/uploads/font-size-3.png" alt="Alt text" width="70%" />
+
+### 3. Font Family
+Properti ini memungkinkan pengguna dapat mengubah jenis dan gaya font pada landing page. kami
+telah menyediakan ratusan jenis dan gaya font yang dapat anda pilih untuk lebih mempercantik tampilan landing page anda, berikut contoh font yang tersedia dan penerapanya:
+
+Saya akan mengubah title text pada component hero dari yang awalnya seperti ini :
+
+<img src="/uploads/font-family-2.png" alt="Alt text" width="70%" />
+
+Pada panel properties klik selectbox pada opsi font family seperti gambar dibawah ini, lalu pilih font yang kamu suka :
+
+<img src="/uploads/font-family-1.png" alt="Alt text" width="50%" />
+
+Maka hasil perubahanya seperti gambar dibawah ini :
+
+<img src="/uploads/font-family-3.png" alt="Alt text" width="70%" />
+
+## C. Size
+Pada segment ini adalah properti pengaturan terkait ukuran suatu komponent, baik itu komponent block, images, button, container, boxed, card , List dan lain lain.
+
+<img src="/uploads/size.png" alt="Alt text" width="50%" />
+
+Properti ini akan membaca tiap element yang aktif di klik terkait tinggi dan lebar'nya element tersebut.
+anda dapat merubah nilai tinggi dan lebar'nya maka secara otomatis komponent akan menyesuaikan.
+
+
+1. **Min Width** : Untuk menentukan minimal lebar dari komponent.
+2. **Max Width** : Untuk menentukan maksimal lebar dari komponent.
+3. **Min Height** : Untuk menentukan minimal tinggi dari komponent.
+4. **Max Height** : Untuk menentukan maksimal tinggi dari komponent.
+
+## D. Margin
+Margin adalah properti yang digunakan untuk menciptakan ruang atau jarak di luar (outside) elemen HTML, memisahkan elemen tersebut dari elemen-elemen di sekitarnya.
+Bayangkan setiap elemen (seperti gambar, paragraf, atau tombol) sebagai sebuah foto yang ditempel di dalam bingkai. Margin adalah jarak antara bingkai foto yang satu dengan bingkai foto lainnya.
+
+Contoh margin dapat anda lihat pada gambar dibawah ini, margin adalah jarak antara box biru dengan garis merah tipis tipis
+<img src="/uploads/margin.png" alt="Alt text" width="80%" />
+
+Tujuan dengan adanya margin ialah untuk memberikan jarak antar komponent pada website.
+
+## E. Padding
+Padding adalah properti yang digunakan untuk menciptakan ruang atau jarak di dalam (inside) elemen HTML, antara konten elemen tersebut dengan border (batas)-nya.
+
+Contoh padding dapat anda lihat pada gambar dibawah ini, perhatikan pada tanda panah, margin adalah jarak antara tulisan dalam box dengan batas tepi dalam box biru itu sendiri.
+<img src="/uploads/padding.png" alt="Alt text" width="80%" />
+
+Tujuan dengan adanya margin ialah untuk memberikan jarak antar komponent pada website.
+
+## F. Border
+Setiap komponent seperti divider, boxed, container dan lain lain dapat anda berikan sebuah border di tiap komponent nya, yaitu berupa
+garis tepi yang ketebalan garisnya dapat anda atur melalui panel properti.
+
+Sebagai contoh lihat gambar dibawah ini :
+<img src="/uploads/border.png" alt="Alt text" width="80%" />
+
+## G. Border Radius
+Border radius adalah sebuah properti untuk membuat suatu komponent memiliki element rounded di setiap ujung tepinya.
+
+Sebagai contoh lihat gambar dibawah ini :
+<img src="/uploads/rounded.png" alt="Alt text" width="50%" />
+
+besaran lekukan rounded dapat anda atur tiap ujung tepi kanan kirinya atau salah satunya saja melalui panel properti.
+
+## H. Background Image
+Setiap komponent seperti divider, boxed, container dan lain lain dapat diberikan sebuah background image pada komponent tersebut.
+
+Sebagai contoh lihat gambar dibawah ini :
+
+Contoh preview sebelum di set background :
+
+<img src="/uploads/bg-before.png" alt="Alt text" width="80%" />
+
+Contoh preview setelah di set background :
+
+<img src="/uploads/bg-after.png" alt="Alt text" width="80%" />

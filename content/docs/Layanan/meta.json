@@ -1,0 +1,6 @@
+{
+  "title": "Pilihan Layanan",
+  "description": "Penjelasan Layanan Tersedia",
+  "root": false,
+  "pages": ["node_basic","node_creator","node_pro"]
+}

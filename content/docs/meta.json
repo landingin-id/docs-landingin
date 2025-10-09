@@ -1,0 +1,14 @@
+{
+  "title": "docs",
+  "description": "The description of root folder (optional)",
+  "root": true,
+  "pages": [
+    "---Pendahuluan---",
+    "panduan_memulai",
+    "tentang_landingin",
+    "Layanan",
+    "---Segment---",
+    "Dashboard",
+    "Editor"
+  ]
+}

@@ -1,9 +1,9 @@
 import '@/app/global.css';
 import { RootProvider } from 'fumadocs-ui/provider';
-import { Inter } from 'next/font/google';
+import { Inter, Roboto } from 'next/font/google';
 import type { ReactNode } from 'react';
 
-const inter = Inter({
+const inter = Roboto({
   subsets: ['latin'],
 });
 

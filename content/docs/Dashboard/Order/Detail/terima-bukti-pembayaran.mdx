@@ -1,0 +1,37 @@
+---
+title: Terima bukti pembayaran
+description: Melihat bukti pembayaran bank transfer dari sisi penjual.
+---
+
+<img src="/uploads/terima-pembayaran.png" alt="Alt text" width="100%" />
+
+#### Alur Proses
+
+Berikut alur proses khusus untuk metode pembayaran yang di pilih oleh pelanggan ialah bank transfer.
+
+import { Step, Steps } from 'fumadocs-ui/components/steps';
+
+<Steps>
+  <Step>
+  #### Proses Checkout
+  Pelanggan memilih metode pembayaran bank transfer
+  <img src="/uploads/terima-pembayaran-1.png" alt="Alt text" width="100%" />
+  </Step>
+  <Step>
+  #### Halaman Pembayaran
+  Pelanggan akan di arahkan ke halaman
+  informasi pembayaran terkait nomor rekening tujuan pembayaran, lakukan pembayaran dan upload bukti bayar.
+  <img src="/uploads/terima-pembayaran-2.png" alt="Alt text" width="100%" />
+  </Step>
+  <Step>
+  #### Cek bukti transfer
+  Pada halaman detail order, penjual melakukan pengecekan secara manual terkait bukti transfer, apabila sudah sesuai, penjual
+  akan mengklik button "Set Paid"
+  <img src="/uploads/terima-pembayaran-3.png" alt="Alt text" width="100%" />
+  </Step>
+  <Step>
+  #### Link Download Produk
+  Link download produk akan otomatis terkirim ke alamat email pelanggan, setelah penjual mengklik button "Set Paid" di halaman detail order
+  <img src="/uploads/terima-pembayaran-4.png" alt="Alt text" width="100%" />
+  </Step>
+</Steps>
