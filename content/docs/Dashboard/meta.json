@@ -2,5 +2,5 @@
   "title": "Fitur Dashboard",
   "description": "Panduan pada halaman dashboard",
   "root": true,
-  "pages": ["Beranda","Toko","Produk","Order","Transaksi","Pelanggan"]
+  "pages": ["Beranda","Toko","Produk","Order","Transaksi","Pelanggan","Landing Page","Presets","Tagihan","Penarikan","Pengaturan"]
 }
