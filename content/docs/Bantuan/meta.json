@@ -1,0 +1,6 @@
+{
+  "title": "Bantuan",
+  "description": "Halaman Bantuan Untuk Para Pengguna Landingin",
+  "root": false,
+  "pages": ["pusat_bantuan","faq"]
+}
