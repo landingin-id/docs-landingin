@@ -1,0 +1,6 @@
+{
+  "title": "Legal",
+  "description": "Legal Dokument terkait platform landingin",
+  "root": false,
+  "pages": ["syarat_ketentuan","kebijakan_privasi","kebijakan_pembayaran","kebijakan_pencairan_dana","kebijakan_produk_digital","kebijakan_kyc_dan_verifikasi"]
+}
