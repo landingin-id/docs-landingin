@@ -4,40 +4,66 @@ description: Penjelasan tahapan pemesanan melalui link produk.
 ---
 
 
-
 import { Step, Steps } from 'fumadocs-ui/components/steps';
 
 <Steps>
+
   <Step>
-  #### Open Produk Link
-  Dari halaman produk klik button "Pesan Sekarang" 
-  <img src="/uploads/tahapan-order-1.png" alt="Alt text" width="100%" />
+  #### Buka Link Produk
+  Pelanggan membuka halaman produk melalui link produk, lalu klik tombol **"Pesan Sekarang"** untuk memulai proses pemesanan.
+  
+  <img src="/uploads/tahapan-order-1.png" alt="Halaman produk dan tombol pesan sekarang" width="100%" />
   </Step>
+
   <Step>
-  #### Isi Data diri
-  Masukan nama, email dan nomor telp lalu klik "Selesaikan Pembayaran"
-  <img src="/uploads/tahapan-order-2.png" alt="Alt text" width="100%" />
+  #### Isi Data Diri
+  Pelanggan mengisi data pribadi yang dibutuhkan untuk proses pemesanan, meliputi:
+  - Nama
+  - Alamat email
+  - Nomor telepon
+  
+  Setelah data diisi dengan benar, klik tombol **"Selesaikan Pembayaran"** untuk melanjutkan ke tahap berikutnya.
+  
+  <img src="/uploads/tahapan-order-2.png" alt="Form pengisian data diri pelanggan" width="100%" />
   </Step>
+
   <Step>
   #### Pilih Metode Pembayaran
-  Masukan nama, email dan nomor telp lalu klik "Selesaikan Pembayaran"
-  <img src="/uploads/tahapan-order-3.png" alt="Alt text" width="100%" />
+  Pada halaman pembayaran, pelanggan memilih metode pembayaran yang tersedia sesuai preferensi, seperti:
+  - Transfer bank
+  - Metode pembayaran otomatis lainnya (jika tersedia)
+  
+  Setelah memilih metode pembayaran, klik tombol **"Bayar Sekarang"** untuk melanjutkan proses transaksi.
+  
+  <img src="/uploads/tahapan-order-3.png" alt="Pilihan metode pembayaran" width="100%" />
   </Step>
+
   <Step>
   #### Lakukan Pembayaran
-  Lakukan pembayaran sejumlah nominal tertera.
-  <img src="/uploads/tahapan-order-4.png" alt="Alt text" width="100%" />
+  Pelanggan melakukan pembayaran sesuai dengan **nominal yang tertera** dan mengikuti instruksi pembayaran berdasarkan metode yang dipilih.
+  
+  Pastikan pembayaran dilakukan dengan benar agar pesanan dapat diproses tanpa kendala.
+  
+  <img src="/uploads/tahapan-order-4.png" alt="Instruksi dan proses pembayaran" width="100%" />
   </Step>
+
   <Step>
-  #### Pembayaran Selesai
-  Pembayaran telah selesai, Link download produk otomatis terkirim ke alamat email anda.
-  <img src="/uploads/tahapan-order-5.png" alt="Alt text" width="100%" />
+  #### Pembayaran Berhasil
+  Setelah pembayaran berhasil diproses:
+  - Status order akan diperbarui oleh sistem
+  - Pelanggan akan menerima konfirmasi pembayaran
+  - **Link download produk digital** akan otomatis dikirim ke alamat email pelanggan
+  
+  <img src="/uploads/tahapan-order-5.png" alt="Pembayaran berhasil dan notifikasi link download" width="100%" />
   </Step>
+
 </Steps>
 
 <Cards>
-    <Card href="#" title="Catatan">
-      Untuk opsi metode pembayaran bank transfer, setelah pembeli melakukan konfirmasi pembayaran link download produk
-    tidak otomatis terkirim, perlu ada konfirmasi pembayaran terlebih dahulu dari pihak penjual.
-    </Card>
+  <Card title="Catatan Penting">
+    Untuk metode pembayaran <b>Bank Transfer</b>, link download produk <b>tidak dikirim secara otomatis</b>.
+    <br /><br />
+    Pelanggan perlu melakukan konfirmasi pembayaran terlebih dahulu, dan penjual wajib melakukan pengecekan serta
+    konfirmasi sebelum link download produk dapat dibagikan kepada pelanggan.
+  </Card>
 </Cards>

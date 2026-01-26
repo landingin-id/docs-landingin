@@ -2,5 +2,5 @@
   "title": "Fitur Editor",
   "description": "Panduan Memahami Tools Editor",
   "root": true,
-  "pages": ["Pengenalan","Konten","Lanjutan"]
+  "pages": ["Pengenalan","Konten"]
 }

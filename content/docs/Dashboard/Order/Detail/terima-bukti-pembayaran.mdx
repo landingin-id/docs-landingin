@@ -1,37 +1,63 @@
 ---
-title: Terima bukti pembayaran
-description: Melihat bukti pembayaran bank transfer dari sisi penjual.
+title: Terima Bukti Pembayaran
+description: Melihat dan memverifikasi bukti pembayaran Bank Transfer dari sisi penjual.
 ---
 
-<img src="/uploads/terima-pembayaran.png" alt="Alt text" width="100%" />
+<img src="/uploads/terima-pembayaran.png" alt="Halaman terima bukti pembayaran bank transfer" width="100%" />
 
-#### Alur Proses
+### Penjelasan
 
-Berikut alur proses khusus untuk metode pembayaran yang di pilih oleh pelanggan ialah bank transfer.
+Halaman **Terima Bukti Pembayaran** digunakan oleh penjual untuk melakukan **pengecekan dan verifikasi pembayaran** yang dilakukan pelanggan menggunakan metode **Bank Transfer**.
+
+Karena pembayaran Bank Transfer tidak terkonfirmasi secara otomatis, penjual perlu melakukan pengecekan manual terhadap bukti pembayaran yang diunggah oleh pelanggan sebelum melanjutkan proses pesanan.
+
+### Alur Proses
+
+Berikut adalah alur proses pemesanan khusus untuk metode pembayaran **Bank Transfer**:
 
 import { Step, Steps } from 'fumadocs-ui/components/steps';
 
 <Steps>
   <Step>
   #### Proses Checkout
-  Pelanggan memilih metode pembayaran bank transfer
-  <img src="/uploads/terima-pembayaran-1.png" alt="Alt text" width="100%" />
+  Pelanggan melakukan pemesanan produk dan memilih metode pembayaran **Bank Transfer** pada saat checkout.
+  <img src="/uploads/terima-pembayaran-1.png" alt="Pelanggan memilih metode bank transfer" width="100%" />
   </Step>
+
   <Step>
   #### Halaman Pembayaran
-  Pelanggan akan di arahkan ke halaman
-  informasi pembayaran terkait nomor rekening tujuan pembayaran, lakukan pembayaran dan upload bukti bayar.
-  <img src="/uploads/terima-pembayaran-2.png" alt="Alt text" width="100%" />
+  Pelanggan diarahkan ke halaman informasi pembayaran yang berisi:
+  - Nomor rekening tujuan
+  - Instruksi pembayaran
+  - Form upload bukti transfer  
+
+  Setelah melakukan transfer, pelanggan wajib mengunggah bukti pembayaran melalui halaman ini.
+  <img src="/uploads/terima-pembayaran-2.png" alt="Halaman upload bukti pembayaran" width="100%" />
   </Step>
+
   <Step>
-  #### Cek bukti transfer
-  Pada halaman detail order, penjual melakukan pengecekan secara manual terkait bukti transfer, apabila sudah sesuai, penjual
-  akan mengklik button "Set Paid"
-  <img src="/uploads/terima-pembayaran-3.png" alt="Alt text" width="100%" />
+  #### Cek Bukti Transfer
+  Pada halaman **Detail Order**, penjual melakukan pengecekan secara manual terhadap:
+  - Nominal pembayaran
+  - Tanggal dan waktu transfer
+  - Kesesuaian bukti transfer  
+
+  Apabila pembayaran telah sesuai, penjual dapat mengklik tombol **"Set Paid"** untuk mengonfirmasi pembayaran.
+  <img src="/uploads/terima-pembayaran-3.png" alt="Verifikasi bukti transfer oleh penjual" width="100%" />
   </Step>
+
   <Step>
   #### Link Download Produk
-  Link download produk akan otomatis terkirim ke alamat email pelanggan, setelah penjual mengklik button "Set Paid" di halaman detail order
-  <img src="/uploads/terima-pembayaran-4.png" alt="Alt text" width="100%" />
+  Setelah penjual mengklik tombol **"Set Paid"**, sistem akan:
+  - Mengubah status order menjadi **Paid**
+  - Mengirimkan **link download produk** secara otomatis ke alamat email pelanggan (untuk produk digital)
+
+  <img src="/uploads/terima-pembayaran-4.png" alt="Link download terkirim ke email pelanggan" width="100%" />
   </Step>
 </Steps>
+
+### Catatan
+
+- Pastikan bukti pembayaran telah diverifikasi dengan benar sebelum menekan tombol **Set Paid**.
+- Untuk produk digital, link download **tidak akan dikirim** sebelum pembayaran dikonfirmasi oleh penjual.
+- Untuk produk fisik, proses pengiriman dapat dilakukan setelah status order berubah menjadi **Paid**.
