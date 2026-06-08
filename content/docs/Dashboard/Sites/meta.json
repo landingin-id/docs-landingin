@@ -1,0 +1,14 @@
+{
+  "title": "Sites",
+  "description": "Kelola Sites Anda",
+  "root": false,
+  "pages": [
+    "buat-sites-baru",
+    "kelola-detail-site",
+    "publish-site",
+    "buat-halaman-baru",
+    "ganti-template",
+    "custom-domain",
+    "hapus-site"
+  ]
+}

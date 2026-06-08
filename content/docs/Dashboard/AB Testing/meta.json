@@ -1,0 +1,11 @@
+{
+  "title": "A/B Testing",
+  "description": "Panduan eksperimen A/B pada site Anda",
+  "root": false,
+  "pages": [
+    "tentang-halaman-ab-testing",
+    "langkah-1-pilih-site",
+    "langkah-2-atur-experiment",
+    "langkah-3-pantau-hasil"
+  ]
+}

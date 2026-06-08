@@ -1,0 +1,83 @@
+---
+title: Langkah 2 Atur Experiment
+description: Membuat experiment dan mengatur variant untuk A/B testing.
+---
+
+### Penjelasan
+
+Pada **Langkah 2**, Anda membuat experiment dan menambahkan variant
+yang akan diuji pada site terpilih.
+
+Di halaman ini, ada dua area utama:
+- **Experiments** untuk membuat dan memilih experiment
+- **Variants untuk Experiment** untuk menambah, mengedit, dan menghapus variant
+
+---
+
+### Membuat Experiment Baru
+
+1. Pastikan site sudah dipilih dari **Langkah 1**
+2. Pada panel **Experiments**, klik tombol **Baru**
+3. Isi data experiment pada modal yang muncul:
+- **Kode Experiment**
+- **Status**: `Draft`, `Active`, atau `Paused`
+- **Start Date**
+- **End Date**
+4. Klik **Simpan Experiment**
+
+Setelah berhasil, experiment akan muncul pada daftar di panel kiri.
+
+---
+
+### Mengatur Variant
+
+Setelah experiment dipilih, Anda dapat mengatur variant pada panel kanan.
+
+Untuk menambah variant:
+1. Pastikan satu experiment sudah dipilih
+2. Isi **Nama label variant**
+3. Klik **Simpan Variant**
+
+Pada implementasi saat ini, sistem akan membuat halaman variant baru secara otomatis
+dari template site yang sedang dipilih, lalu menghubungkannya ke experiment tersebut.
+
+---
+
+### Aksi Yang Tersedia
+
+Di halaman ini Anda juga dapat:
+- **Edit Experiment**
+- **Hapus** experiment
+- **Lihat performa** untuk lanjut ke Langkah 3
+- **Edit** variant
+- **Hapus** variant
+- **Go to Editor** untuk membuka editor halaman variant
+
+Jika variant dihapus, sistem juga dapat ikut menghapus halaman variant terkait.
+
+---
+
+### Status Experiment
+
+Status experiment yang tersedia:
+- **Draft**: experiment belum aktif penuh
+- **Active**: experiment sedang berjalan
+- **Paused**: experiment dihentikan sementara
+
+Gunakan status **Active** jika Anda sudah siap menguji variant dengan traffic nyata.
+
+---
+
+### Tips Pengaturan Variant
+
+Agar hasil A/B testing lebih berguna:
+- Gunakan minimal 2 variant
+- Buat perbedaan yang jelas antar variant, misalnya headline atau CTA
+- Gunakan nama label variant yang mudah dikenali
+- Hindari terlalu banyak perubahan sekaligus jika ingin hasil lebih mudah dianalisis
+
+### Catatan
+
+- Langkah ini bergantung pada site yang dipilih di Langkah 1.
+- Jika belum ada experiment, Anda harus membuatnya terlebih dahulu sebelum menyimpan variant.
+- Setelah variant dibuat, Anda bisa membuka editor untuk menyesuaikan isi masing-masing halaman variant.

@@ -1,0 +1,12 @@
+{
+  "title": "Billing",
+  "description": "Kelola layanan dan tagihan akun Anda",
+  "root": false,
+  "pages": [
+    "tentang-halaman-billing",
+    "kelola-paket",
+    "upgrade-paket",
+    "downgrade-paket",
+    "riwayat-tagihan-dan-pembayaran"
+  ]
+}

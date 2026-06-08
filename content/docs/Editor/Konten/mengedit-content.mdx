@@ -1,33 +1,92 @@
 ---
 title: Mengedit Konten
-description: Edit teks dan media secara visual di Landingin Editor.
+description: Mengakses Landingin Editor dari dashboard untuk mengedit konten site atau page secara visual.
 ---
 
-<img src="/uploads/ngedit-content.png" alt="Mengedit konten di Landingin Editor" width="100%" />
+<img src="/uploads/pergi-ke-editor.jpg" alt="Mengedit konten di Landingin Editor" width="100%" />
 
-### Memulai
+### Penjelasan
 
-1. **Login ke Dashboard Landingin**
-   Login melalui aplikasi, download dan install aplikasi terlebih dahulu, link download [Download App](https://landingin.id/halaman-download-67).
+Pada project `landingin-saas`, proses mengedit konten dilakukan melalui
+tombol **Pergi Ke Editor** yang tersedia di dashboard.
 
-2. **Akses Halaman Landing Page**  
-   Navigasi ke **Landing Page → Pilih Domain → Pilih Halaman** yang ingin diedit.
+Editor ini dipakai untuk membuka halaman editor visual agar Anda bisa
+melakukan perubahan konten tanpa mengedit kode secara langsung.
 
-3. **Buka Editor**  
-   Klik tombol **“Pergi ke Editor”** untuk masuk ke halaman editor visual.
+Anda bisa masuk ke editor dari dua titik utama:
 
----
-
-### Auto Login Editor
-
-Setelah mengklik tombol **“Pergi ke Editor”**, Anda akan secara otomatis diarahkan ke **Landingin Editor**.  
-Di sini, Anda dapat:
-
-- Mengubah teks langsung di halaman (inline editing)  
-- Mengunggah dan mengganti gambar/media  
-- Menyesuaikan elemen secara visual tanpa perlu menulis kode  
-- Menyimpan perubahan secara instan dengan **auto-save**  
+- Dari daftar **Sites** untuk membuka editor utama site
+- Dari daftar **Pages** di dalam detail site untuk membuka editor page tertentu
 
 ---
 
-Dengan fitur ini, proses **mengedit konten menjadi cepat, mudah, dan aman**, sehingga Anda bisa fokus pada desain dan konversi halaman.
+### Cara Membuka Editor Dari Sites
+
+1. Masuk ke dashboard Landingin
+2. Buka halaman **Sites**
+3. Pilih site yang ingin diedit
+4. Klik tombol **Pergi Ke Editor**
+
+Jika site sudah memiliki `deploy_url`, sistem akan melakukan login otomatis
+ke editor dan langsung membuka halaman utama site.
+
+---
+
+### Cara Membuka Editor Dari Detail Site
+
+1. Buka halaman detail site dari dashboard
+2. Pada bagian ringkasan atau aksi site, klik **Pergi Ke Editor**
+
+Alur ini akan membuka editor untuk template utama site yang sedang dipakai.
+
+---
+
+### Cara Membuka Editor Untuk Page Tertentu
+
+1. Buka halaman detail site
+2. Masuk ke tab atau daftar **Pages**
+3. Cari page yang ingin diedit
+4. Klik tombol **Pergi Ke Editor** pada baris page tersebut
+
+Jika berhasil, editor akan dibuka langsung ke file page yang sesuai
+berdasarkan slug page tersebut.
+
+---
+
+### Apa Yang Terjadi Saat Tombol Diklik
+
+Pada implementasi saat ini, tombol **Pergi Ke Editor** akan:
+
+- Mengirim login otomatis ke editor
+- Membawa Anda ke halaman editor yang sesuai
+- Membuka template site atau page yang dipilih
+
+Artinya, Anda tidak perlu login manual lagi ke editor selama akses site
+sudah tersedia dengan benar.
+
+---
+
+### Kondisi Saat Editor Belum Bisa Dibuka
+
+Jika site belum dipublish atau belum memiliki `deploy_url`,
+tombol editor tidak akan berfungsi penuh.
+
+Pada kondisi ini, aplikasi menampilkan bahwa editor belum tersedia
+karena site belum dipublish.
+
+---
+
+### Yang Bisa Dilakukan Di Editor
+
+Setelah editor terbuka, Anda dapat:
+
+- Mengubah teks pada halaman
+- Menyesuaikan konten visual
+- Mengelola elemen halaman sesuai fitur editor
+- Melanjutkan pengeditan pada site atau page yang dipilih
+
+### Catatan
+
+- Akses editor berasal dari halaman `Sites` dan detail `Site`, bukan dari flow lama berbasis domain.
+- Untuk page tertentu, tombol editor tersedia pada daftar `Pages` di detail site.
+- Pastikan site sudah siap diakses sebelum mencoba membuka editor.

@@ -1,0 +1,9 @@
+{
+  "title": "Domains",
+  "description": "Kelola domain custom Anda",
+  "root": false,
+  "pages": [
+    "tentang-halaman-domains",
+    "registrasi-dan-perpanjang-domain"
+  ]
+}

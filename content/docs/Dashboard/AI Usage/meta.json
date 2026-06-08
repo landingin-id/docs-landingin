@@ -1,0 +1,10 @@
+{
+  "title": "AI Usage",
+  "description": "Pantau pemakaian AI dan topup saldo wallet",
+  "root": false,
+  "pages": [
+    "tentang-halaman-ai-usage",
+    "topup-saldo-ai",
+    "memahami-pemakaian-ai"
+  ]
+}
