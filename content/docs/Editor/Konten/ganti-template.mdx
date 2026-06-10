@@ -3,115 +3,81 @@ title: Ganti Template
 description: Mengganti template site atau page sesuai alur yang tersedia di project landingin-saas.
 ---
 
-<img src="/uploads/ganti-template.png" alt="Ganti Template Landingin" width="100%" />
+<img src="/uploads/ganti-templates.png" alt="Halaman ganti template site" width="100%" />
 
 ### Penjelasan
 
-Pada project `landingin-saas`, fitur **Ganti Template** digunakan untuk
-mengubah template pada:
+Setiap site memiliki template utama yang digunakan sebagai dasar tampilan.
 
-- **Site** secara keseluruhan
-- **Page** tertentu di dalam site
+Jika Anda ingin mengubah tampilan site tanpa membuat site baru, gunakan fitur
+**Ganti Template** pada halaman detail site.
 
-Template dipilih dari daftar template yang tersedia, lalu diterapkan dari
-halaman khusus pemilihan template.
-
----
-
-### Di Mana Fitur Ini Digunakan
-
-Saat ini ada dua alur utama:
-
-#### 1. Ganti Template Site
-Alur ini dipakai untuk mengganti template utama dari sebuah site.
-
-#### 2. Ganti Template Page
-Alur ini dipakai untuk mengganti template pada satu page tertentu
-tanpa harus mengganti template seluruh site.
+Fitur ini berguna ketika Anda ingin:
+- Mengubah desain utama site
+- Menyesuaikan tampilan dengan campaign baru
+- Mengganti struktur visual tanpa membuat site dari awal
 
 ---
 
-### Cara Mengganti Template
+### Cara Ganti Template Site
 
-#### A. Ganti Template Site
+#### 1. Buka Detail Site
+Masuk ke halaman **Sites**, pilih site yang ingin diubah, lalu klik **Manage**.
 
-1. Masuk ke dashboard Landingin
-2. Buka halaman **Sites**
-3. Pilih site yang ingin dikelola
-4. Pada halaman detail site, klik tombol **Ganti Template**
+#### 2. Temukan Bagian Template
+Pada tab **Overview**, cari kartu informasi **Template**.
 
-Setelah itu Anda akan diarahkan ke halaman pemilihan template site.
+Di bagian ini sistem menampilkan:
+- Nama template yang sedang digunakan
+- Segment template
+- Group template
 
-Di halaman ini, Anda dapat:
-- Melihat **template saat ini**
-- Memilih **template baru**
-- Melihat daftar template berdasarkan **segment** dan **group**
-- Membuka **demo template**
-- Menjalankan aksi **Ganti Template Site**
+#### 3. Klik Ganti Template
+Klik tombol **Ganti Template** untuk membuka halaman pemilihan template site.
 
-#### Langkah mengganti template site
+<img src="/uploads/ganti-template-button.jpg" alt="Halaman tambah site baru" width="100%" />
 
-1. Buka halaman **Pilih Template**
-2. Gunakan filter **segment** jika diperlukan
-3. Gunakan filter **group** untuk mempersempit daftar template
-4. Klik salah satu template yang ingin dipakai
-5. Klik tombol **Ganti Template Site**
+#### 4. Pilih Template Baru
+Pada halaman pemilihan template:
+- Pilih template yang ingin digunakan 
+- Gunakan filter segment atau group jika diperlukan
+- Perhatikan label **Gratis** atau **Premium**
 
-Jika berhasil, sistem akan menyimpan template baru lalu mengarahkan Anda
-kembali ke halaman detail site.
+<img src="/uploads/pilih-template-page.jpg" alt="Halaman tambah site baru" width="100%" />
 
----
+Jika template yang dipilih termasuk premium, pengguna paket gratis mungkin tidak dapat menggunakannya.
 
-#### B. Ganti Template Page
+#### 5. Simpan Perubahan
+Setelah template baru dipilih, lalu selanjutnya klik tombol **Ganti Template Site**
 
-1. Masuk ke halaman detail site
-2. Buka daftar page pada site tersebut
-3. Pilih page yang ingin diubah
-4. Klik tombol **Ganti Template** pada page terkait
+<img src="/uploads/klik-ganti-template.jpg" alt="Halaman tambah site baru" width="100%" />
 
-Setelah itu Anda akan masuk ke halaman pemilihan template khusus untuk page.
-
-Di halaman ini, Anda dapat:
-- Melihat nama page
-- Melihat slug page
-- Memilih template dari daftar yang tersedia
-- Menjalankan aksi **Terapkan Template ke Page**
-
-#### Langkah mengganti template page
-
-1. Buka halaman pemilihan template page
-2. Pilih **segment** dan **group** jika diperlukan
-3. Klik template yang ingin dipakai
-4. Klik tombol **Terapkan Template ke Page**
-
-Jika berhasil, sistem akan menyimpan template baru untuk page tersebut
-dan mengarahkan Anda kembali ke halaman site.
+Setelah berhasil, template site akan diperbarui sesuai pilihan Anda.
 
 ---
 
-### Informasi Yang Tersedia Pada Halaman Template
+### Dampak Setelah Template Diganti
 
-Pada halaman pemilihan template, biasanya Anda akan melihat:
-- Nama template
-- Label **Gratis** atau **Premium**
-- Segment dan group template
-- Tombol atau link **Lihat demo**
-- Status template yang sedang dipilih
+Mengganti template dapat memengaruhi:
+- Struktur tampilan halaman utama
+- Susunan section atau layout
+- Kesesuaian konten lama terhadap template baru
 
-Beberapa template ditandai sebagai **Premium**. Sesuai tampilan aplikasi,
-template premium ditujukan untuk paket berbayar.
+Karena itu, setelah mengganti template, sebaiknya lanjutkan pengecekan di editor.
 
 ---
 
-### Tombol Yang Perlu Diperhatikan
+### Lanjutkan Ke Editor
 
-- **Ganti Template Site**: menerapkan template ke level site
-- **Terapkan Template ke Page**: menerapkan template ke page tertentu
-- **Kembali ke Site**: kembali ke halaman detail site tanpa menyimpan perubahan
+Setelah template diganti, Anda dapat kembali ke halaman detail site lalu klik
+**Pergi Ke Editor** untuk menyesuaikan:
+- Teks
+- Gambar
+- Tata letak
+- Section yang digunakan
 
 ### Catatan
 
-- Alur ganti template saat ini dilakukan dari halaman detail `Site` atau `Page`, bukan dari menu `Themes`.
-- Anda bisa memakai filter `segment` dan `group` untuk menemukan template yang lebih sesuai.
-- Jika template belum dipilih, tombol aksi utama tidak bisa dijalankan.
-- Untuk template premium, pastikan paket akun Anda sudah sesuai sebelum mencoba menggunakannya.
+- Template premium hanya tersedia untuk paket tertentu.
+- Setelah mengganti template, cek ulang isi site sebelum dipublish ke publik.
+- Jika perubahan tampilan cukup besar, Anda bisa lakukan penyesuaian tambahan di editor.
