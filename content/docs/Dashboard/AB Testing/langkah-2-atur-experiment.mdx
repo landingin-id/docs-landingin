@@ -2,7 +2,7 @@
 title: Langkah 2 Atur Experiment
 description: Membuat experiment dan mengatur variant untuk A/B testing.
 ---
-
+<img src="/uploads/langkah-2-testing.jpg" alt="Halaman detail site" width="100%" />
 ### Penjelasan
 
 Pada **Langkah 2**, Anda membuat experiment dan menambahkan variant
@@ -16,20 +16,28 @@ Di halaman ini, ada dua area utama:
 
 ### Membuat Experiment Baru
 
+<img src="/uploads/buat-experiment-baru.jpg" alt="Halaman detail site" width="100%" />
+
 1. Pastikan site sudah dipilih dari **Langkah 1**
 2. Pada panel **Experiments**, klik tombol **Baru**
 3. Isi data experiment pada modal yang muncul:
-- **Kode Experiment**
-- **Status**: `Draft`, `Active`, atau `Paused`
-- **Start Date**
-- **End Date**
+- **Kode Experiment** : Nama kode dari experiment yang dibuat
+- **Status**: Status experiment apakah running atau tidak, apabila running maka A/B Testing akan berjalan dan melakukan capture analytics setiap ada pengunjung di tandai dengan status `Draft`, `Active`, atau `Paused`
+- **Start Date** : Tanggal mulai dari experiment mulai running / berjalan.
+- **End Date** : Tanggal berakhir dari experiment mulai running / berjalan.
 4. Klik **Simpan Experiment**
 
-Setelah berhasil, experiment akan muncul pada daftar di panel kiri.
+Setelah berhasil, experiment akan muncul pada daftar di panel kiri. seperti gambar dibawah ini :
+
+<img src="/uploads/hasil-experiment.jpg" alt="Halaman detail site" width="100%" />
+
+Pada studi kasus kali ini kode experiment yang dibuat dinamai **hero_head_news** tujuan experiment yang ingin dilakukan terkait membuat variasi pada headline
 
 ---
 
 ### Mengatur Variant
+
+<img src="/uploads/hasil-variant.jpg" alt="Halaman detail site" width="100%" />
 
 Setelah experiment dipilih, Anda dapat mengatur variant pada panel kanan.
 
@@ -40,6 +48,48 @@ Untuk menambah variant:
 
 Pada implementasi saat ini, sistem akan membuat halaman variant baru secara otomatis
 dari template site yang sedang dipilih, lalu menghubungkannya ke experiment tersebut.
+
+#### Cara Kerjanya
+
+1. Ketika variant dibuat, dia akan menduplikasi template dari site yang dipilih pada langkah 1
+2. Sistem akan otomatis membuat halaman baru sesuai dengan nama variant yang ditentukan, bisa dilihat screenshot dibawah ini :
+
+<img src="/uploads/variant.jpg" alt="Halaman detail site" width="100%" />
+
+Pada studi kasus kali ini terdapat 2 variant yang dibuat, untuk membuat variasi pada headline
+
+#### Pembagian Traffic
+
+Pembagian Traffic di tiap halaman variant adalah 50:50 atau pembagian traffic secara merata.
+Sebagai Contoh :
+Akses landing page https://gomon.landingin.id , maka sistem secara otomatis akan redirect ke salah satu :
+1. https://gomon.landingin.id/halaman-checkout---headline-a.html
+2. https://gomon.landingin.id/halaman-checkout---headline-b.html
+
+Sistem akan otomatis menentukan redirect ke halaman variant mana secara merata sesuai dengan visitor unique.
+
+#### Kustomisasi halaman 
+
+Halaman variant baru yang otomatis dibuat akan berstatus draft terlebih dahulu dan anda bisa melakukan modifikasi tampilan sebelum di publish
+dengan mengklik button "Go to Editor" pada list variant,
+
+Atau anda bisa pergi ke halaman detail sites dan buka tab pages, seperti screenshot dibawah ini :
+
+<img src="/uploads/detail-pagess.jpg" alt="Halaman detail site" width="100%" />
+
+Anda tinggal lakukan kustomisasi konten dan desain di tiap landing page nya seperti contoh dibawah ini
+
+Kustomisasi Halaman Checkout - Headline A 
+
+<img src="/uploads/kustomisasi-variant-a.jpg" alt="Halaman detail site" width="100%" />
+
+Kustomisasi Halaman Checkout - Headline B
+
+<img src="/uploads/kustomisasi-variant-b.jpg" alt="Halaman detail site" width="100%" />
+
+Setelah itu tinggal klik button **Publish**.
+
+
 
 ---
 
